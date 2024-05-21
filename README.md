@@ -23,9 +23,7 @@ Cat Me If You Can! is a fun and engaging matching card game where players have t
 - Beautiful and cute cat images 😻
 - ![Cat Me If You Can! Preview](imgs/preview.png)
 
-2. **Breeds**: Click on "Breeds" in the navigation to see random cat breeds displayed on the screen.
-
-- Random cat breeds displayed when clicking on "Breeds". 🐈‍⬛
+2. **Breeds**: Click on "Breeds" in the navigation to see random cat breeds displayed on the screen. 🐈‍⬛
 
 ## Credits
 
