@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* card game styles */
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 10px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+/* cards wiggle on hover */
+.card:hover {
+    animation: wiggle 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(-5deg);
+    }
+
+    50% {
+        transform: rotateZ(5deg);
+    }
+
+    75% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+
+/* cat data Styles */
+
+.cat-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cat-card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cat-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cat-card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+}
